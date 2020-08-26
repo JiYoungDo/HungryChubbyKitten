@@ -1,7 +1,7 @@
 # [Game] HungryChubbyKitten
 - SimpleGame
 
-# 구현해본 내용
+# 구현 내용
 - 회원가입
 - 스레드와 핸들러
 - 사운드
