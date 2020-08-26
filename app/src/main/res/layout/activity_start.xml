@@ -1,0 +1,75 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/mink"
+    tools:context=".StartActivity">
+
+
+    <com.google.android.gms.ads.AdView
+        xmlns:ads="http://schemas.android.com/apk/res-auto"
+        android:id="@+id/adView"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_centerHorizontal="true"
+        android:layout_alignParentBottom="true"
+        ads:adSize="BANNER"
+        ads:layout_constraintTop_toTopOf="parent"
+        ads:layout_constraintRight_toRightOf="parent"
+        ads:layout_constraintLeft_toLeftOf="parent"
+        ads:adUnitId="ca-app-pub-9985773287738144/3399529319">
+    </com.google.android.gms.ads.AdView>
+
+
+    <Button
+        android:id="@+id/start_ib_start"
+        android:layout_width="170dp"
+        android:layout_height="170dp"
+        android:background="@drawable/startselector"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintLeft_toLeftOf="parent"
+        tools:ignore="ContentDescription,RtlHardcoded"
+        android:layout_marginLeft="10dp"/>
+
+    <Button
+        android:id="@+id/start_ib_logout"
+        android:layout_width="110dp"
+        android:layout_height="110dp"
+        android:background="@drawable/logoutselector"
+        app:layout_constraintBottom_toBottomOf="@id/music"
+        app:layout_constraintRight_toRightOf="parent"
+        tools:ignore="ContentDescription,RtlHardcoded"
+        android:layout_marginRight="10dp"
+        android:layout_marginBottom="10dp"/>
+
+    <Button
+        android:id="@+id/start_ib_rule"
+        android:layout_width="170dp"
+        android:layout_height="170dp"
+        android:background="@drawable/ruleselector"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintRight_toRightOf="parent"
+        android:layout_marginRight="10dp"
+        tools:ignore="ContentDescription,RtlHardcoded" />
+
+    <TextView
+        android:id="@+id/music"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginBottom="4dp"
+        android:text="Track : Jahzzar - BigC_goes_to_LA Music by Jahzzar , http://Betterwithmusic.com Attribution-ShareAlike 4.0 International (CC BY-SA 4.0)"
+        android:textSize="5sp"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintLeft_toLeftOf="parent"
+        app:layout_constraintRight_toRightOf="parent"/>
+
+
+
+
+
+
+</androidx.constraintlayout.widget.ConstraintLayout>

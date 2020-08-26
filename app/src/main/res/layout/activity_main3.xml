@@ -1,0 +1,468 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/mink"
+    tools:context=".Main3Activity">
+
+    <TextView
+        android:id="@+id/main3_tv_timer"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="time"
+        android:textSize="40sp"
+        android:textColor="@color/black"
+        app:layout_constraintRight_toRightOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        android:layout_marginRight="10dp"
+        android:layout_marginTop="10dp"
+        tools:ignore="HardcodedText" />
+
+    <TextView
+        android:id="@+id/main3_tv_score"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Score"
+        android:textColor="@color/red"
+        android:textSize="35sp"
+        android:textStyle="bold"
+        app:layout_constraintLeft_toLeftOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        android:layout_marginLeft="10dp"
+        android:layout_marginTop="10dp"
+        tools:ignore="HardcodedText" />
+
+    <ImageView
+        android:id="@+id/main3_iv_cat_1"
+        android:layout_width="60dp"
+        android:layout_height="60dp"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintEnd_toEndOf="@id/main3_iv_cat_2"
+        app:layout_constraintTop_toTopOf="@id/main3_iv_cat_2"
+        tools:ignore="ContentDescription" />
+
+    <ImageView
+        android:id="@+id/main3_iv_cat_2"
+        android:layout_width="60dp"
+        android:layout_height="60dp"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        android:layout_marginTop="70dp"
+        tools:ignore="ContentDescription" />
+
+    <ImageView
+        android:id="@+id/main3_iv_cat_3"
+        android:layout_width="60dp"
+        android:layout_height="60dp"
+        app:layout_constraintStart_toStartOf="@id/main3_iv_cat_2"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintTop_toTopOf="@id/main3_iv_cat_2"
+        tools:ignore="ContentDescription" />
+
+    <ImageView
+        android:id="@+id/main3_iv_cat_4"
+        android:layout_width="60dp"
+        android:layout_height="60dp"
+        app:layout_constraintStart_toStartOf="@id/main3_iv_cat_1"
+        app:layout_constraintEnd_toEndOf="@id/main3_iv_cat_2"
+        app:layout_constraintTop_toBottomOf="@id/main3_iv_cat_2"
+        android:layout_marginTop="35dp"
+        tools:ignore="ContentDescription" />
+
+    <ImageView
+        android:id="@+id/main3_iv_cat_5"
+        android:layout_width="60dp"
+        android:layout_height="60dp"
+        app:layout_constraintStart_toStartOf="@id/main3_iv_cat_2"
+        app:layout_constraintEnd_toEndOf="@id/main3_iv_cat_3"
+        app:layout_constraintTop_toTopOf="@id/main3_iv_cat_4"
+        tools:ignore="ContentDescription" />
+
+    <ImageView
+        android:id="@+id/main3_iv_cat_6"
+        android:layout_width="60dp"
+        android:layout_height="60dp"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintEnd_toEndOf="@id/main3_iv_cat_2"
+        app:layout_constraintTop_toBottomOf="@id/main3_iv_cat_4"
+        android:layout_marginTop="35dp"
+        tools:ignore="ContentDescription" />
+
+    <ImageView
+        android:id="@+id/main3_iv_cat_7"
+        android:layout_width="60dp"
+        android:layout_height="60dp"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintTop_toTopOf="@id/main3_iv_cat_6"
+        tools:ignore="ContentDescription" />
+
+    <ImageView
+        android:id="@+id/main3_iv_cat_8"
+        android:layout_width="60dp"
+        android:layout_height="60dp"
+        app:layout_constraintStart_toStartOf="@id/main3_iv_cat_2"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintTop_toTopOf="@id/main3_iv_cat_6"
+        tools:ignore="ContentDescription" />
+
+
+    <TextView
+        android:id="@+id/main3_tv_your"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="----- 나의 우유와 물고기와 쥐 -----"
+        android:textSize="20sp"
+        android:textStyle="bold"
+        app:layout_constraintTop_toBottomOf="@id/main3_iv_cat_7"
+        android:layout_marginTop="20dp"
+        app:layout_constraintLeft_toLeftOf="parent"
+        app:layout_constraintRight_toRightOf="parent"
+        tools:ignore="HardcodedText" />
+
+    <ImageView
+        android:id="@+id/main3_iv_mouse_1"
+        android:layout_width="40dp"
+        android:layout_height="40dp"
+        app:layout_constraintRight_toRightOf="@id/main3_iv_milk_1"
+        app:layout_constraintBottom_toTopOf="@id/main3_iv_fish_1"
+        app:layout_constraintLeft_toLeftOf="@id/main3_iv_milk_1"
+        android:layout_marginBottom="10dp"
+        tools:ignore="ContentDescription" />
+
+    <ImageView
+        android:id="@+id/main3_iv_mouse_2"
+        android:layout_width="40dp"
+        android:layout_height="40dp"
+        app:layout_constraintRight_toRightOf="@id/main3_iv_milk_2"
+        app:layout_constraintBottom_toTopOf="@id/main3_iv_fish_2"
+        app:layout_constraintLeft_toLeftOf="@id/main3_iv_milk_2"
+        android:layout_marginBottom="10dp"
+        tools:ignore="ContentDescription" />
+
+    <ImageView
+        android:id="@+id/main3_iv_mouse_3"
+        android:layout_width="40dp"
+        android:layout_height="40dp"
+        app:layout_constraintRight_toRightOf="@id/main3_iv_milk_3"
+        app:layout_constraintBottom_toTopOf="@id/main3_iv_fish_3"
+        app:layout_constraintLeft_toLeftOf="@id/main3_iv_milk_3"
+        android:layout_marginBottom="10dp"
+        tools:ignore="ContentDescription" />
+    <ImageView
+        android:id="@+id/main3_iv_mouse_4"
+        android:layout_width="40dp"
+        android:layout_height="40dp"
+        app:layout_constraintRight_toRightOf="@id/main3_iv_milk_4"
+        app:layout_constraintBottom_toTopOf="@id/main3_iv_fish_4"
+        app:layout_constraintLeft_toLeftOf="@id/main3_iv_milk_4"
+        android:layout_marginBottom="10dp"
+        tools:ignore="ContentDescription" />
+
+    <ImageView
+        android:id="@+id/main3_iv_mouse_5"
+        android:layout_width="40dp"
+        android:layout_height="40dp"
+        app:layout_constraintRight_toRightOf="@id/main3_iv_milk_5"
+        app:layout_constraintBottom_toTopOf="@id/main3_iv_fish_5"
+        app:layout_constraintLeft_toLeftOf="@id/main3_iv_milk_5"
+        android:layout_marginBottom="10dp"
+        tools:ignore="ContentDescription" />
+
+    <ImageView
+        android:id="@+id/main3_iv_mouse_6"
+        android:layout_width="40dp"
+        android:layout_height="40dp"
+        app:layout_constraintRight_toRightOf="@id/main3_iv_milk_6"
+        app:layout_constraintBottom_toTopOf="@id/main3_iv_fish_6"
+        app:layout_constraintLeft_toLeftOf="@id/main3_iv_milk_6"
+        android:layout_marginBottom="10dp"
+        tools:ignore="ContentDescription" />
+
+    <ImageView
+        android:id="@+id/main3_iv_mouse_7"
+        android:layout_width="40dp"
+        android:layout_height="40dp"
+        app:layout_constraintRight_toRightOf="@id/main3_iv_milk_7"
+        app:layout_constraintBottom_toTopOf="@id/main3_iv_fish_7"
+        app:layout_constraintLeft_toLeftOf="@id/main3_iv_milk_7"
+        android:layout_marginBottom="10dp"
+        tools:ignore="ContentDescription" />
+    <ImageView
+        android:id="@+id/main3_iv_mouse_8"
+        android:layout_width="40dp"
+        android:layout_height="40dp"
+        app:layout_constraintRight_toRightOf="@id/main3_iv_milk_8"
+        app:layout_constraintBottom_toTopOf="@id/main3_iv_fish_8"
+        app:layout_constraintLeft_toLeftOf="@id/main3_iv_milk_8"
+        android:layout_marginBottom="10dp"
+        tools:ignore="ContentDescription" />
+
+    <ImageView
+        android:id="@+id/main3_iv_mouse_9"
+        android:layout_width="40dp"
+        android:layout_height="40dp"
+        app:layout_constraintRight_toRightOf="@id/main3_iv_milk_9"
+        app:layout_constraintBottom_toTopOf="@id/main3_iv_fish_9"
+        app:layout_constraintLeft_toLeftOf="@id/main3_iv_milk_9"
+        android:layout_marginBottom="10dp"
+        tools:ignore="ContentDescription" />
+
+    <ImageView
+        android:id="@+id/main3_iv_mouse_10"
+        android:layout_width="40dp"
+        android:layout_height="40dp"
+        app:layout_constraintRight_toRightOf="@id/main3_iv_milk_10"
+        app:layout_constraintBottom_toTopOf="@id/main3_iv_fish_10"
+        app:layout_constraintLeft_toLeftOf="@id/main3_iv_milk_10"
+        android:layout_marginBottom="10dp"
+        tools:ignore="ContentDescription" />
+
+    <ImageView
+        android:id="@+id/main3_iv_fish_1"
+        android:layout_width="40dp"
+        android:layout_height="40dp"
+        app:layout_constraintRight_toRightOf="@id/main3_iv_milk_1"
+        app:layout_constraintBottom_toTopOf="@id/main3_iv_milk_1"
+        app:layout_constraintLeft_toLeftOf="@id/main3_iv_milk_1"
+        android:layout_marginBottom="10dp"
+        tools:ignore="ContentDescription" />
+
+    <ImageView
+        android:id="@+id/main3_iv_fish_2"
+        android:layout_width="40dp"
+        android:layout_height="40dp"
+        app:layout_constraintRight_toRightOf="@id/main3_iv_milk_2"
+        app:layout_constraintBottom_toTopOf="@id/main3_iv_milk_2"
+        app:layout_constraintLeft_toLeftOf="@id/main3_iv_milk_2"
+        android:layout_marginBottom="10dp"
+        tools:ignore="ContentDescription" />
+
+    <ImageView
+        android:id="@+id/main3_iv_fish_3"
+        android:layout_width="40dp"
+        android:layout_height="40dp"
+        app:layout_constraintRight_toRightOf="@id/main3_iv_milk_3"
+        app:layout_constraintBottom_toTopOf="@id/main3_iv_milk_3"
+        app:layout_constraintLeft_toLeftOf="@id/main3_iv_milk_3"
+        android:layout_marginBottom="10dp"
+        tools:ignore="ContentDescription" />
+
+    <ImageView
+        android:id="@+id/main3_iv_fish_4"
+        android:layout_width="40dp"
+        android:layout_height="40dp"
+        app:layout_constraintRight_toRightOf="@id/main3_iv_milk_4"
+        app:layout_constraintBottom_toTopOf="@id/main3_iv_milk_4"
+        app:layout_constraintLeft_toLeftOf="@id/main3_iv_milk_4"
+        android:layout_marginBottom="10dp"
+        tools:ignore="ContentDescription" />
+
+    <ImageView
+        android:id="@+id/main3_iv_fish_5"
+        android:layout_width="40dp"
+        android:layout_height="40dp"
+        app:layout_constraintRight_toRightOf="@id/main3_iv_milk_5"
+        app:layout_constraintBottom_toTopOf="@id/main3_iv_milk_5"
+        app:layout_constraintLeft_toLeftOf="@id/main3_iv_milk_5"
+        android:layout_marginBottom="10dp"
+        tools:ignore="ContentDescription" />
+
+
+    <ImageView
+        android:id="@+id/main3_iv_fish_6"
+        android:layout_width="40dp"
+        android:layout_height="40dp"
+        app:layout_constraintRight_toRightOf="@id/main3_iv_milk_6"
+        app:layout_constraintBottom_toTopOf="@id/main3_iv_milk_6"
+        app:layout_constraintLeft_toLeftOf="@id/main3_iv_milk_6"
+        android:layout_marginBottom="10dp"
+        tools:ignore="ContentDescription" />
+
+    <ImageView
+        android:id="@+id/main3_iv_fish_7"
+        android:layout_width="40dp"
+        android:layout_height="40dp"
+        app:layout_constraintRight_toRightOf="@id/main3_iv_milk_7"
+        app:layout_constraintBottom_toTopOf="@id/main3_iv_milk_7"
+        app:layout_constraintLeft_toLeftOf="@id/main3_iv_milk_7"
+        android:layout_marginBottom="10dp"
+        tools:ignore="ContentDescription" />
+
+    <ImageView
+        android:id="@+id/main3_iv_fish_8"
+        android:layout_width="40dp"
+        android:layout_height="40dp"
+        app:layout_constraintRight_toRightOf="@id/main3_iv_milk_8"
+        app:layout_constraintBottom_toTopOf="@id/main3_iv_milk_8"
+        app:layout_constraintLeft_toLeftOf="@id/main3_iv_milk_8"
+        android:layout_marginBottom="10dp"
+        tools:ignore="ContentDescription" />
+
+    <ImageView
+        android:id="@+id/main3_iv_fish_9"
+        android:layout_width="40dp"
+        android:layout_height="40dp"
+        app:layout_constraintRight_toRightOf="@id/main3_iv_milk_9"
+        app:layout_constraintBottom_toTopOf="@id/main3_iv_milk_9"
+        app:layout_constraintLeft_toLeftOf="@id/main3_iv_milk_9"
+        android:layout_marginBottom="10dp"
+        tools:ignore="ContentDescription" />
+
+    <ImageView
+        android:id="@+id/main3_iv_fish_10"
+        android:layout_width="40dp"
+        android:layout_height="40dp"
+        app:layout_constraintRight_toRightOf="@id/main3_iv_milk_10"
+        app:layout_constraintBottom_toTopOf="@id/main3_iv_milk_10"
+        app:layout_constraintLeft_toLeftOf="@id/main3_iv_milk_10"
+        android:layout_marginBottom="10dp"
+        tools:ignore="ContentDescription" />
+
+
+
+
+    <ImageView
+        android:id="@+id/main3_iv_milk_1"
+        android:layout_width="20dp"
+        android:layout_height="40dp"
+        app:layout_constraintLeft_toLeftOf="parent"
+        android:layout_marginLeft="10dp"
+        app:layout_constraintBottom_toTopOf="@id/main3_fill_btn"
+        android:layout_marginBottom="25dp"
+        tools:ignore="ContentDescription" />
+
+    <ImageView
+        android:id="@+id/main3_iv_milk_2"
+        android:layout_width="20dp"
+        android:layout_height="40dp"
+        app:layout_constraintLeft_toRightOf="@id/main3_iv_milk_1"
+        app:layout_constraintRight_toLeftOf="@id/main3_iv_milk_3"
+        app:layout_constraintBottom_toTopOf="@id/main3_fill_btn"
+        android:layout_marginBottom="25dp"
+        tools:ignore="ContentDescription,RtlHardcoded" />
+
+    <ImageView
+        android:id="@+id/main3_iv_milk_3"
+        android:layout_width="20dp"
+        android:layout_height="40dp"
+        app:layout_constraintLeft_toRightOf="@id/main3_iv_milk_1"
+        app:layout_constraintRight_toLeftOf="@id/main3_iv_milk_5"
+        app:layout_constraintBottom_toTopOf="@id/main3_fill_btn"
+        android:layout_marginBottom="25dp"
+        tools:ignore="ContentDescription,RtlHardcoded" />
+
+    <ImageView
+        android:id="@+id/main3_iv_milk_4"
+        android:layout_width="20dp"
+        android:layout_height="40dp"
+        app:layout_constraintLeft_toRightOf="@id/main3_iv_milk_3"
+        app:layout_constraintRight_toLeftOf="@id/main3_iv_milk_5"
+        app:layout_constraintBottom_toTopOf="@id/main3_fill_btn"
+        android:layout_marginBottom="25dp"
+        tools:ignore="ContentDescription,RtlHardcoded" />
+
+    <ImageView
+        android:id="@+id/main3_iv_milk_5"
+        android:layout_width="20dp"
+        android:layout_height="40dp"
+        app:layout_constraintLeft_toLeftOf="@id/main3_iv_cat_2"
+        app:layout_constraintBottom_toTopOf="@id/main3_fill_btn"
+        android:layout_marginBottom="25dp"
+        tools:ignore="ContentDescription,RtlHardcoded" />
+
+    <ImageView
+        android:id="@+id/main3_iv_milk_6"
+        android:layout_width="20dp"
+        android:layout_height="40dp"
+        app:layout_constraintRight_toRightOf="@id/main3_iv_cat_2"
+        app:layout_constraintBottom_toTopOf="@id/main3_fill_btn"
+        android:layout_marginBottom="25dp"
+        tools:ignore="ContentDescription,RtlHardcoded" />
+
+    <ImageView
+        android:id="@+id/main3_iv_milk_7"
+        android:layout_width="20dp"
+        android:layout_height="40dp"
+        app:layout_constraintLeft_toRightOf="@id/main3_iv_milk_6"
+        app:layout_constraintRight_toLeftOf="@id/main3_iv_milk_8"
+        app:layout_constraintBottom_toTopOf="@id/main3_fill_btn"
+        android:layout_marginBottom="25dp"
+        tools:ignore="ContentDescription,RtlHardcoded" />
+
+    <ImageView
+        android:id="@+id/main3_iv_milk_8"
+        android:layout_width="20dp"
+        android:layout_height="40dp"
+        app:layout_constraintLeft_toRightOf="@id/main3_iv_milk_6"
+        app:layout_constraintRight_toLeftOf="@id/main3_iv_milk_10"
+        app:layout_constraintBottom_toTopOf="@id/main3_fill_btn"
+        android:layout_marginBottom="25dp"
+        tools:ignore="ContentDescription,RtlHardcoded" />
+
+    <ImageView
+        android:id="@+id/main3_iv_milk_9"
+        android:layout_width="20dp"
+        android:layout_height="40dp"
+        app:layout_constraintLeft_toRightOf="@id/main3_iv_milk_8"
+        app:layout_constraintRight_toLeftOf="@id/main3_iv_milk_10"
+        app:layout_constraintBottom_toTopOf="@id/main3_fill_btn"
+        android:layout_marginBottom="25dp"
+        tools:ignore="ContentDescription,RtlHardcoded" />
+
+    <ImageView
+        android:id="@+id/main3_iv_milk_10"
+        android:layout_width="20dp"
+        android:layout_height="40dp"
+        app:layout_constraintRight_toRightOf="parent"
+        android:layout_marginRight="10dp"
+        app:layout_constraintBottom_toTopOf="@id/main3_fill_btn"
+        android:layout_marginLeft="15dp"
+        android:layout_marginBottom="25dp"
+        tools:ignore="ContentDescription,RtlHardcoded" />
+
+    <Button
+        android:id="@+id/main3_fill_btn"
+        android:layout_width="wrap_content"
+        android:layout_height="60dp"
+        android:text=" 우 유 "
+        android:textSize="17sp"
+        android:textStyle="bold"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@id/main3_iv_cat_6"
+        android:layout_marginTop="260dp"
+        android:layout_marginLeft="35dp"
+        tools:ignore="HardcodedText,RtlHardcoded" />
+
+    <Button
+        android:id="@+id/main3_fill2_btn"
+        android:layout_width="wrap_content"
+        android:layout_height="60dp"
+        android:text=" 물고기 "
+        android:textSize="17sp"
+        android:textStyle="bold"
+        app:layout_constraintStart_toEndOf="@id/main3_fill_btn"
+        app:layout_constraintEnd_toStartOf="@id/main3_fill3_btn"
+        app:layout_constraintTop_toTopOf="@id/main3_fill_btn"
+        tools:ignore="HardcodedText" />
+
+    <Button
+        android:id="@+id/main3_fill3_btn"
+        android:layout_width="wrap_content"
+        android:layout_height="60dp"
+        android:text=" 쥐 "
+        android:textSize="17sp"
+        android:textStyle="bold"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintTop_toTopOf="@id/main3_fill_btn"
+        android:layout_marginLeft="10dp"
+        android:layout_marginRight="35dp"
+        tools:ignore="HardcodedText,RtlHardcoded" />
+
+
+
+</androidx.constraintlayout.widget.ConstraintLayout>

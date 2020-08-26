@@ -1,0 +1,260 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/mink"
+    tools:context=".EndActivity">
+
+    <TextView
+    android:id="@+id/end_tv_score_text"
+    android:layout_width="wrap_content"
+    android:layout_height="70dp"
+    android:layout_marginTop="50dp"
+    android:layout_marginRight="70dp"
+    android:background="@color/black"
+    android:text=" 점수 : "
+    android:textColor="@color/mink"
+    android:textSize="45sp"
+    android:textStyle="bold"
+    app:layout_constraintLeft_toLeftOf="parent"
+        app:layout_constraintRight_toRightOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        tools:ignore="HardcodedText,RtlHardcoded"
+        />
+
+    <TextView
+        android:id="@+id/end_tv_score"
+        android:layout_width="wrap_content"
+        android:layout_height="70dp"
+        android:layout_marginTop="50dp"
+        android:background="@color/black"
+        android:text=" 0 "
+        android:textColor="@color/mink"
+        android:textSize="45sp"
+        android:textStyle="bold"
+        app:layout_constraintLeft_toRightOf="@id/end_tv_score_text"
+       app:layout_constraintTop_toTopOf="parent"
+        tools:ignore="HardcodedText" />
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text=" [ 초급 레벨 점수 기록판 ] "
+        android:textColor="@color/white"
+        android:textSize="20sp"
+        android:textStyle="bold"
+        app:layout_constraintLeft_toLeftOf="parent"
+        app:layout_constraintRight_toRightOf="parent"
+        app:layout_constraintTop_toBottomOf="@id/end_tv_score_text"
+        app:layout_constraintBottom_toTopOf="@id/grid"
+        tools:ignore="HardcodedText" />
+
+
+    <GridLayout
+        android:id="@+id/grid"
+        android:layout_width="wrap_content"
+        android:layout_height="300dp"
+        android:layout_marginTop="50dp"
+        android:columnCount="2"
+        android:orientation="horizontal"
+        android:rowCount="6"
+        app:layout_constraintBottom_toTopOf="@id/end_btn_again"
+        app:layout_constraintLeft_toLeftOf="parent"
+        app:layout_constraintRight_toRightOf="parent"
+        app:layout_constraintTop_toBottomOf="@id/end_tv_score_text">
+
+        <TextView
+            android:text="  순위  "
+            android:textColor="@color/white"
+            android:textSize="30sp"
+            android:textStyle="bold"
+            tools:ignore="HardcodedText" />
+        <TextView
+            android:text=" 점수 "
+            android:textColor="@color/white"
+            android:textSize="30sp"
+            android:textStyle="bold"
+            tools:ignore="HardcodedText" />
+<!--        <TextView-->
+<!--            android:text="  TimeLog  "-->
+<!--            android:textSize="30sp"-->
+<!--            android:textColor="@color/white"-->
+<!--            android:textStyle="bold"/>-->
+
+        <!--첫번째 스코어-->
+        <TextView
+            android:id="@+id/end_rank_1"
+            android:text="    1    "
+            android:textColor="@color/white"
+            android:textSize="30sp"
+            android:textStyle="bold"
+            tools:ignore="HardcodedText" />
+        <TextView
+            android:id="@+id/end_score_1"
+            android:text=" empty "
+            android:textColor="@color/black"
+            android:textSize="30sp"
+            android:textStyle="bold"
+            tools:ignore="HardcodedText" />
+<!--        <TextView-->
+<!--            android:id="@+id/end_timelog_1"-->
+<!--            android:text="  empty  "-->
+<!--            android:textSize="30sp"-->
+<!--            android:textColor="@color/black"-->
+<!--            android:textStyle="bold"/>-->
+
+        <!--두번째 스코어-->
+        <TextView
+            android:id="@+id/end_rank_2"
+            android:text="    2    "
+            android:textColor="@color/white"
+            android:textSize="30sp"
+            android:textStyle="bold"
+            tools:ignore="HardcodedText" />
+        <TextView
+            android:id="@+id/end_score_2"
+            android:text=" empty "
+            android:textColor="@color/black"
+            android:textSize="30sp"
+            android:textStyle="bold"
+            tools:ignore="HardcodedText" />
+
+
+        <!--세번째 스코어-->
+        <TextView
+            android:id="@+id/end_rank_3"
+            android:text="    3    "
+            android:textColor="@color/white"
+            android:textSize="30sp"
+            android:textStyle="bold"
+            tools:ignore="HardcodedText" />
+        <TextView
+            android:id="@+id/end_score_3"
+            android:text=" empty "
+            android:textColor="@color/black"
+            android:textSize="30sp"
+            android:textStyle="bold"
+            tools:ignore="HardcodedText" />
+<!--        <TextView-->
+<!--            android:id="@+id/end_timelog_3"-->
+<!--            android:text="  empty  "-->
+<!--            android:textSize="30sp"-->
+<!--            android:textColor="@color/black"-->
+<!--            android:textStyle="bold"/>-->
+
+
+        <!--네번째 스코어-->
+        <TextView
+            android:id="@+id/end_rank_4"
+            android:text="    4    "
+            android:textColor="@color/white"
+            android:textSize="30sp"
+            android:textStyle="bold"
+            tools:ignore="HardcodedText" />
+        <TextView
+            android:id="@+id/end_score_4"
+            android:text=" empty "
+            android:textColor="@color/black"
+            android:textSize="30sp"
+            android:textStyle="bold"
+            tools:ignore="HardcodedText" />
+<!--        <TextView-->
+<!--            android:id="@+id/end_timelog_4"-->
+<!--            android:text="  empty  "-->
+<!--            android:textSize="30sp"-->
+<!--            android:textColor="@color/black"-->
+<!--            android:textStyle="bold"/>-->
+
+        <!--다섯 번째 스코어-->
+        <TextView
+            android:id="@+id/end_rank_5"
+            android:text="    5    "
+            android:textColor="@color/white"
+            android:textSize="30sp"
+            android:textStyle="bold"
+            tools:ignore="HardcodedText" />
+        <TextView
+            android:id="@+id/end_score_5"
+            android:text=" empty "
+            android:textColor="@color/black"
+            android:textSize="30sp"
+            android:textStyle="bold"
+            tools:ignore="HardcodedText" />
+
+    </GridLayout>
+
+    <com.airbnb.lottie.LottieAnimationView
+        android:id="@+id/loginanimation_cat"
+        android:layout_width="80dp"
+        android:layout_height="80dp"
+        app:layout_constraintBottom_toBottomOf="@id/end_tv_score_text"
+        app:layout_constraintLeft_toRightOf="@id/end_tv_score"
+        app:lottie_autoPlay="true"
+
+        app:lottie_loop="true"
+        app:lottie_rawRes ="@raw/cat"
+        />
+
+    <Button
+        android:id="@+id/end_btn_again"
+        android:layout_width="150dp"
+        android:layout_height="150dp"
+        android:layout_marginLeft="30dp"
+        android:layout_marginBottom="30dp"
+        android:background="@drawable/againselector"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintLeft_toLeftOf="parent"
+        tools:ignore="RtlHardcoded" />
+
+    <Button
+        android:id="@+id/end_btn_exit"
+        android:layout_width="150dp"
+        android:layout_height="150dp"
+        android:layout_marginRight="30dp"
+        android:layout_marginBottom="30dp"
+        android:background="@drawable/exitselector"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintRight_toRightOf="parent"
+        tools:ignore="RtlHardcoded" />
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        app:layout_constraintBottom_toTopOf="@id/music"
+        app:layout_constraintRight_toRightOf="parent"
+        app:layout_constraintLeft_toLeftOf="parent"
+        android:text=" animation by thrive.io "
+        android:textSize="5sp"
+        tools:ignore="HardcodedText" />
+
+    <TextView
+        android:id="@+id/music"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginBottom="4dp"
+        android:text="Track : Jahzzar - BigC_goes_to_LA Music by Jahzzar , http://Betterwithmusic.com Attribution-ShareAlike 4.0 International (CC BY-SA 4.0)"
+        android:textSize="5sp"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintLeft_toLeftOf="parent"
+        app:layout_constraintRight_toRightOf="parent"/>
+
+    <com.google.android.gms.ads.AdView
+        xmlns:ads="http://schemas.android.com/apk/res-auto"
+        android:id="@+id/adView"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_centerHorizontal="true"
+        android:layout_alignParentBottom="true"
+        ads:adSize="BANNER"
+        ads:layout_constraintTop_toTopOf="parent"
+        ads:layout_constraintRight_toRightOf="parent"
+        ads:layout_constraintLeft_toLeftOf="parent"
+        ads:adUnitId="ca-app-pub-9985773287738144/3021105426">
+    </com.google.android.gms.ads.AdView>
+
+
+
+</androidx.constraintlayout.widget.ConstraintLayout>

@@ -1,0 +1,126 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/mink"
+    tools:context=".LoginActivity">
+
+
+<com.airbnb.lottie.LottieAnimationView
+    android:id="@+id/loginanimation_cat"
+    android:layout_width="180dp"
+    android:layout_height="180dp"
+    app:lottie_autoPlay="true"
+    app:layout_constraintTop_toTopOf="parent"
+    app:layout_constraintBottom_toTopOf="@id/login_tv_title"
+    app:layout_constraintRight_toRightOf="parent"
+    app:layout_constraintLeft_toLeftOf="parent"
+    app:lottie_rawRes ="@raw/cat"
+    app:lottie_loop="true"
+    />
+
+    <TextView
+        android:id="@+id/login_tv_title"
+        android:layout_width="wrap_content"
+        android:layout_height="70dp"
+        android:layout_marginBottom="130dp"
+        android:background="@color/black"
+        android:text=" 배고픈 뚱냥이 "
+        android:textColor="@color/mink"
+        android:textSize="35sp"
+        android:textStyle="bold"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintLeft_toLeftOf="parent"
+        app:layout_constraintRight_toRightOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintVertical_bias="0.501"
+        tools:ignore="HardcodedText"
+        android:gravity="center_vertical" />
+
+    <TextView
+        android:id="@+id/login_register_tv"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        app:layout_constraintTop_toBottomOf="@id/login_et_pw"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintRight_toRightOf="parent"
+        app:layout_constraintLeft_toLeftOf="parent"
+        android:layout_marginTop="20dp"
+        android:text="[ 회원가입 ]"
+        android:textSize="20sp"
+        tools:ignore="HardcodedText" />
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        app:layout_constraintBottom_toTopOf="@id/music"
+        app:layout_constraintRight_toRightOf="parent"
+        app:layout_constraintLeft_toLeftOf="parent"
+        android:text=" animation by thrive.io "
+        android:textSize="5sp"
+        tools:ignore="HardcodedText" />
+
+    <TextView
+        android:id="@+id/music"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginBottom="4dp"
+        android:text="Track : Jahzzar - BigC_goes_to_LA Music by Jahzzar , http://Betterwithmusic.com Attribution-ShareAlike 4.0 International (CC BY-SA 4.0)"
+        android:textSize="5sp"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintLeft_toLeftOf="parent"
+        app:layout_constraintRight_toRightOf="parent"/>
+
+
+
+
+    <EditText
+        android:id="@+id/login_et_id"
+        android:layout_width="230dp"
+        android:layout_height="wrap_content"
+        android:textColor="@color/black"
+        android:textSize="20sp"
+        android:hint="아이디"
+        android:inputType="text"
+        app:layout_constraintLeft_toLeftOf="@+id/login_tv_title"
+        app:layout_constraintRight_toRightOf="@id/login_tv_title"
+        app:layout_constraintTop_toBottomOf="@id/login_tv_title"
+        android:layout_marginTop="80dp"
+        android:layout_marginRight="70dp"
+        tools:ignore="Autofill,HardcodedText,RtlHardcoded" />
+
+    <EditText
+        android:id="@+id/login_et_pw"
+        android:layout_width="230dp"
+        android:layout_height="wrap_content"
+        android:textColor="@color/black"
+        android:textSize="20sp"
+        android:hint="비밀번호"
+        android:inputType="text"
+        app:layout_constraintLeft_toLeftOf="@+id/login_tv_title"
+        app:layout_constraintRight_toRightOf="@id/login_tv_title"
+        app:layout_constraintTop_toBottomOf="@id/login_et_id"
+        android:layout_marginTop="10dp"
+        android:layout_marginRight="70dp"
+        tools:ignore="Autofill,HardcodedText,RtlHardcoded" />
+
+    <Button
+        android:id="@+id/login_btn"
+        android:layout_width="wrap_content"
+        android:layout_height="100dp"
+        android:text="로그인"
+        android:textSize="20sp"
+        app:layout_constraintTop_toTopOf="@+id/login_et_id"
+        app:layout_constraintBottom_toBottomOf="@id/login_et_pw"
+        app:layout_constraintLeft_toRightOf="@id/login_et_id"
+        tools:ignore="HardcodedText" />
+
+
+
+
+
+
+</androidx.constraintlayout.widget.ConstraintLayout>
